@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import Navigation from './Navigation';
 
 const Header = (props) => {
     return (
-        <header className="d-flex justify-content-between px-2 border-bottom">
+        <header className="d-flex justify-content-between p-2 border-bottom">
             <h4 className="m-0">{props.title}</h4>
-                <img src="" alt="Company logo" />
-            <h2>Home</h2>
+                <img src="https://via.placeholder.com/120x30" className = "logo" alt="Company logo" />
+            <Navigation />
         </header>
     )
 }
